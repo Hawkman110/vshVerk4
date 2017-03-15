@@ -1,0 +1,67 @@
+$haed: 60px;
+
+body{
+	display:flex
+	flex-flow: row wrap;
+
+	width:800px;
+	margin: 0 auto;
+}
+
+header{
+	order:1;
+	background:yellow;
+	width:100%;
+	height: $haed;
+	margin-top: 20px;
+}
+
+.numer1{
+	order:2;
+	background:red;
+	width:35%;
+	height:300;
+}
+.numer2{
+	order:3;
+	background:blue;
+	width:35%;
+}
+.numer3{
+	order:4;
+	background:green;
+	width:30%;
+}
+
+footer{
+	order:5;
+	background:salmon;
+	width:100%;
+	height: $haed;
+}
+
+@media screen and (max-width:400px){
+body{
+	width:100%;
+}
+
+header{
+	height:50px;	
+}
+
+footer{
+	height:30px;
+}
+
+.numer1{
+	width:100%;
+	height:auto;
+}
+.numer2{
+	width:100%;
+}
+.numer3{
+	width:100%;
+}
+
+}
